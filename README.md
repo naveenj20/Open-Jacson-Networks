@@ -19,9 +19,41 @@ Visual components and Python
 ## Experiment:
 
 
+
 ## Program
 
+```
+developed by : naveen jaisanker
+reg. no : 212224110039
+
+arrival_time = float(input("Enter mean interarrival time: "))
+service_times = [float(i) for i in input("Enter service times of servers: ").split()]
+
+lam = 1/arrival_time
+
+L_total = 0
+W_total = 0
+
+for i,st in enumerate(service_times):
+    mu = 1/st
+    L = lam/(mu-lam)
+    W = 1/(mu-lam)
+
+    L_total += L
+    W_total += W
+
+    print("Server",i+1)
+    print("Average number in queue =", round(L,3))
+    print("Waiting time =", round(W,3))
+
+print("\nTotal average number in system =", round(L_total,3))
+print("Total waiting time in system =", round(W_total,3))
+```
 
 ## Output
 
+![ss](ss_6.png)
+
 ## Result
+
+Thus the program is implemented and executed successfully.
