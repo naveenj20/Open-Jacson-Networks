@@ -18,7 +18,7 @@ Visual components and Python
 
 ## Experiment:
 
-
+![ss](vs1.png)
 
 ## Program
 
